@@ -183,34 +183,33 @@ function App () {
         </Row>
       )}
       {windowWidth > 768 && (
-        <div style={{'flex-direction': 'row', display: 'flex', 'top': '20vh', position: 'absolute', width: '100%', padding: 0}} className='col-xl-12 col-lg-12 col-md-12 col-sm-12'>
-        <ArtDiv className='col-xl-5 col-lg-5 col-md-5 col-sm-12 offset-md-1 offset-lg-1 offset-xl-1' style={{background: 'transparent'}} onClick={toggleLinks}>
+        <div style={{'flex-direction': 'row', display: 'flex', 'top': '20vh', left: '15vw', position: 'absolute', width: '100%', padding: 0}} className='col-xl-12 col-lg-12 col-md-12 col-sm-12'>
+        <ArtDiv className='col-xl-4 col-lg-6 col-md-6 col-sm-12 offset-md-2 offset-lg-3 offset-xl-1' style={{background: 'transparent'}} onClick={toggleLinks}>
           {links && (
             <div className='links' >
-              <a className='icon-link' href='https://open.spotify.com/album/1aqsWv6DDxWjexgplOGDgL?highlight=spotify:track:5sSiAzM6TpTyx5u8EmcFsb' target='_blank'>
+              <a className='icon-link' href='https://open.spotify.com/album/4Uud7Rp9sIPQvXuJUNfMJ7' target='_blank'>
                 <FaSpotify className='s-icon'/>
               </a>
-              <a className='icon-link' href='https://soundcloud.com/cypaq/imo-wtikki-prod-by-rome?in=cypaq/sets/cypaq-complete-collection' target='_blank'>
+              <a className='icon-link' href='https://soundcloud.com/cypaq/issues-wroadman-remy-prod-by-kerum' target='_blank'>
                 <FaSoundcloud className='c-icon'/>
               </a>
-              <a className='icon-link' href='https://music.apple.com/us/album/imo/1501861288?i=1501861291&app=music&ign-mpt=uo%3D4' target='_blank'>
+              <a className='icon-link' href='https://music.apple.com/gh/album/issues-single/1503332767' target='_blank'>
                 <FaApple className='a-icon'/>
               </a>
             </div>
           )}
-          <p className='instruct-tap1'>Tap to stream</p>
-          <Art src={require('./assets/images/imo.jpg')} />
-          
+          {/* <p className='instruct-tap1'>Tap to stream</p> */}
+          <Art src={require('./assets/images/issues.jpeg')} />
         </ArtDiv>
-        <DescDiv className='col-xl-6 col-lg-6 col-md-6 col-sm-12'>
+        <DescDiv className='col-xl-4 col-lg-4 col-md-4 col-sm-12'>
           <DescTitle>
             NEW SINGLE OUT NOW
           </DescTitle>
           <SongTitle >
-            IMO
+            ISSUES
           </SongTitle>
           <Data>
-            CYPAQ & TIKKI
+            CYPAQ & ROADMAN REMY
           </Data>
           <Data1>
             TAP ART TO STREAM
@@ -245,6 +244,10 @@ const GlobalStyle = createGlobalStyle `
 
   button {
     outline: none;
+  }
+
+  .links {
+    width: 500px;
   }
 
   .content {
@@ -375,8 +378,8 @@ const SongTitle = styled.p`
   font-family: Lacquer;
   letter-spacing: 2.5px;
   margin: 0;
-  text-shadow: 5px 0px 0px #B71C1C;
-  color: #F57C00
+  text-shadow: 5px 0px 0px #4CAF50;
+  color: #000
 `
 
 const Data = styled.p`

@@ -25,8 +25,8 @@ const styles = {
     'color': '#757575'
   },
   slide2: {
-    'text-shadow': '5px 0px 0px #F57F17',
-    'color': '#FFFF00'
+    'text-shadow': '5px 0px 0px #4CAF50',
+    'color': '#000'
   },
   slide3: {
     background: '#6AC0FF',
@@ -34,6 +34,16 @@ const styles = {
 };
 
 const music = [
+  {
+    art: require('../assets/images/imo.jpg'),
+    title: 'IMO',
+    artists: 'CYPAQ & TIKKI',
+    style: {'text-shadow': '5px 0px 0px #B71C1C', 'color': '#F57C00'},
+    spotify: 'https://open.spotify.com/album/1aqsWv6DDxWjexgplOGDgL?highlight=spotify:track:5sSiAzM6TpTyx5u8EmcFsb',
+    sound: 'https://soundcloud.com/cypaq/imo-wtikki-prod-by-rome?in=cypaq/sets/cypaq-complete-collection',
+    apple: 'https://music.apple.com/us/album/imo/1501861288?i=1501861291&app=music&ign-mpt=uo%3D4',
+    itemStyle: {background: 'rgba(76, 175, 80, 1)'}
+  },
   {
     art: require('../assets/images/stress.jpg'),
     title: 'STRESS',
@@ -162,18 +172,18 @@ export default function Mobile() {
         <ArtDiv className='col-xl-6 col-lg-6 col-md-6' onClick={toggleFeatureLink}>
           {feature && (
             <div className='links'>
-              <a className='icon-link' href={'https://open.spotify.com/album/1aqsWv6DDxWjexgplOGDgL?highlight=spotify:track:5sSiAzM6TpTyx5u8EmcFsb'} target='_blank'>
+              <a className='icon-link' href={'https://open.spotify.com/album/4Uud7Rp9sIPQvXuJUNfMJ7'} target='_blank'>
                 <FaSpotify className='s-icon'/>
               </a>
-              <a className='icon-link' href={'https://soundcloud.com/cypaq/imo-wtikki-prod-by-rome?in=cypaq/sets/cypaq-complete-collection'} target='_blank'>
+              <a className='icon-link' href={'https://soundcloud.com/cypaq/issues-wroadman-remy-prod-by-kerum'} target='_blank'>
                 <FaSoundcloud className='c-icon'/>
               </a>
-              <a className='icon-link' href={'https://music.apple.com/us/album/imo/1501861288?i=1501861291&app=music&ign-mpt=uo%3D4'} target='_blank'>
+              <a className='icon-link' href={'https://music.apple.com/gh/album/issues-single/1503332767'} target='_blank'>
                 <FaApple className='a-icon'/>
               </a>
             </div>
           )}
-          <Art src={require('../assets/images/imo.jpg')}/>
+          <Art src={require('../assets/images/issues.jpeg')}/>
           <p className='instruct-tap black'>Tap to stream</p>
         </ArtDiv>
           <DescDiv className='col-xl-6 col-lg-6 col-md-6'>
@@ -181,10 +191,10 @@ export default function Mobile() {
               NEW SINGLE OUT NOW
             </DescTitle>
             <SongTitle style={styles.slide2}>
-              IMO
+              ISSUES
             </SongTitle>
             <Artists>
-              CYPAQ & TIKKI
+              CYPAQ & ROADMAN REMY
             </Artists>
           </DescDiv>
       </div>
@@ -297,6 +307,7 @@ const GlobalStyle = createGlobalStyle`
   .content-container {
     padding: 0;
     margin: 0;
+    background: #000
   }
 
   iframe {
@@ -309,7 +320,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   .instruct-tap {
-    color: #fff;    
+    color: #000;    
     font-size: 20px;
     font-family: Anton;
     position: absolute;
@@ -362,7 +373,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   .black {
-    color: #FFFF00;
+    color: #4CAF50;
   }
 
   .swipe{
@@ -573,6 +584,7 @@ const DescDiv = styled.div`
   margin-top: 30px;
   padding: 0;
   margin-left: 15px
+  height: 520px
 `
 
 const Art = styled.img`
@@ -593,7 +605,6 @@ const SongTitle = styled.p`
   font-family: Lacquer;
   text-shadow: 5px 0px 0px #6A1B9A;
   letter-spacing: 2.5px;
-  color: #D500F9;
   margin: 0
 `
 

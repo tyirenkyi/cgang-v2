@@ -25,6 +25,17 @@ const styles = {
 
 const music = [
   {
+    art: require('../assets/images/imo.jpg'),
+    title: 'IMO',
+    artists: 'CYPAQ & TIKKI',
+    style: {'text-shadow': '5px 0px 0px #B71C1C'},
+    'color': '#F57C00',
+    spotify: 'https://open.spotify.com/album/1aqsWv6DDxWjexgplOGDgL?highlight=spotify:track:5sSiAzM6TpTyx5u8EmcFsb',
+    sound: 'https://soundcloud.com/cypaq/imo-wtikki-prod-by-rome?in=cypaq/sets/cypaq-complete-collection',
+    apple: 'https://music.apple.com/us/album/imo/1501861288?i=1501861291&app=music&ign-mpt=uo%3D4',
+    itemStyle: {background: 'rgba(76, 175, 80, 1)'}
+  },
+  {
     art: require('../assets/images/stress.jpg'),
     title: 'STRESS',
     artists: 'CYPAQ',
