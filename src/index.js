@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom'
 import { AppContainer } from 'react-hot-loader'
 
 // Your top level component
-import bg_video from './assets/videos/bg-video.mp4'
 import App from './App'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
